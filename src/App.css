@@ -1,38 +1,195 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --complex-chip: #f57f6c;
+  --basic-chip: #91d4a8;
+  --advanced-chip: #e9be74;
+  --none-chip: rgba(0, 0, 0, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "Inter", sans-serif !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.costBreakDown {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  position: relative;
+  width: 86vw;
+  margin: 20px auto;
+  height: 521px;
+  background: #c3e6cd;
+  border-radius: 40px 40px 0px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.staticPages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 80vw;
+  height: 441px;
+  margin: 34px auto;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /* border: 1px solid; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  width: 79.9vw;
+  height: 82px;
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  /* border: 1px solid; */
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+}
+
+.pageCount {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 800;
+}
+
+.pagesTitle {
+  margin-left: 9px;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.summaryContents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 96%;
+  margin: 10px auto;
+  height: 60px;
+  /* border: 1px solid; */
+}
+
+.frame-86 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageDesignAmount {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 14px;
+}
+
+.pageDesignTitle {
+  margin: 0;
+  font-size: 12px;
+}
+
+.frame-87 {
+  display: flex;
+  flex-direction: column;
+}
+
+.IandAamount {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 14px;
+}
+
+.IandA {
+  margin: 0;
+  font-size: 12px;
+}
+
+.frame-88 {
+  display: flex;
+  flex-direction: column;
+  margin-right: -115px;
+}
+
+.dynamicDataAmount {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 14px;
+}
+
+.dynamicaDataTitle {
+  margin: 0;
+  font-size: 12px;
+}
+
+.frame-89 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.subTotal {
+  margin: 0;
+  font-size: 14px;
+  margin-left: 51px;
+  font-weight: 600;
+}
+
+.subTotalAmount {
+  margin: 0;
+  font-size: 34px;
+  margin-left: 26px;
+  font-weight: 800;
+}
+
+.line {
+  background-color: black;
+  width: 100%;
+  height: 14px;
+}
+
+.tableHeadingsRow {
+  display: flex;
+  justify-content: space-between;
+  width: 76vw;
+  margin: 18px;
+}
+
+.tablePageContents {
+  display: flex;
+  flex-direction: column;
+}
+
+th.tableHead {
+  padding: 0.75rem 2rem !important;
+}
+
+.reactChips {
+  width: 212px;
+  height: 30px;
+  background: white;
+  border-radius: 20px;
+}
+
+.MuiChip-root.MuiChip-outlined.MuiChip-sizeMedium.MuiChip-colorDefault.MuiChip-outlinedDefault.css-1012bww-MuiChip-root {
+  width: 140px;
+    margin: 0 auto;
+}
+
+.MuiButtonBase-root.MuiChip-root.MuiChip-outlined.MuiChip-sizeMedium.MuiChip-colorDefault.MuiChip-clickable.MuiChip-clickableColorDefault.MuiChip-outlinedDefault.css-1qfr5sv-MuiButtonBase-root-MuiChip-root {
+  width: 140px;
+    margin: 0 auto;
+}
+
+#tableData {
+  border-collapse: separate;
+  border-spacing: 0 0.5em;
 }
