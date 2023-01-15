@@ -54,14 +54,15 @@ export default function TableData() {
                         <th scope="row">01.<span style={{ fontWeight: 500 }}>Home</span></th>
                         {Object.values(homeArray).map((data, index) => (
                             <td>
-                                <div className='reactChips' style={{ display: 'flex' }}>
+                                <div className='reactChips' style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
                                     <span style={{ padding: '4px' }} onClick={() => handleHomeArrayMinus(index)}>-</span>
                                     <Chip
                                         variant="outlined"
                                         label={data == 0 ? 'None' : data == 1 ? 'Basic' : data == 2 ? 'Advanced' : 'Complex'}
                                         style={{
                                             backgroundColor: data == 0 ? 'rgba(0, 0, 0, 0.2)' : data == 1 ? '#91D4A8' : data == 2 ? '#E9BE74' : '#F57F6C',
-                                            width: data == 0 ? '60px' : data == 1 ? '88px' : '104px'
+                                            width: data == 0 ? '60px' : data == 1 ? '88px' : '104px',
+                                            margin: '0 auto'
                                         }}
                                     />
                                     <span style={{ padding: '4px', marginLeft: data == 0 ? '50px' : data == 1 ? '50px' : '18px' }} onClick={() => handleHomeArrayPlus(index)}>+</span>
@@ -80,9 +81,11 @@ export default function TableData() {
                                         variant="outlined"
                                         onClick={() => handleServiceArray(index)}
                                         label={data == 0 ? 'None' : data == 1 ? 'Basic' : data == 2 ? 'Advanced' : 'Complex'}
-                                        style={{ 
+                                        style={{
                                             backgroundColor: data == 0 ? 'rgba(0, 0, 0, 0.2)' : data == 1 ? '#91D4A8' : data == 2 ? '#E9BE74' : '#F57F6C',
-                                            width: data == 0 ? '60px' : data == 1 ? '88px' : '104px' }}
+                                            width: data == 0 ? '60px' : data == 1 ? '88px' : '104px',
+                                            margin: '0 auto'
+                                        }}
                                     />
                                     <span style={{ padding: '4px', cursor: 'pointer', marginLeft: data == 0 ? '50px' : data == 1 ? '50px' : '18px' }}>+</span>
                                 </div>
@@ -100,7 +103,11 @@ export default function TableData() {
                                         variant="outlined"
                                         onClick={() => handleAboutUsArray(index)}
                                         label={data == 0 ? 'None' : data == 1 ? 'Basic' : data == 2 ? 'Advanced' : 'Complex'}
-                                        style={{ backgroundColor: data == 0 ? 'rgba(0, 0, 0, 0.2)' : data == 1 ? '#91D4A8' : data == 2 ? '#E9BE74' : '#F57F6C', width: data == 0 ? '60px' : data == 1 ? '88px' : '104px' }}
+                                        style={{
+                                            backgroundColor: data == 0 ? 'rgba(0, 0, 0, 0.2)' : data == 1 ? '#91D4A8' : data == 2 ? '#E9BE74' : '#F57F6C',
+                                            width: data == 0 ? '60px' : data == 1 ? '88px' : '104px',
+                                            margin: '0 auto'
+                                        }}
                                     />
                                     <span style={{ padding: '4px', marginLeft: data == 0 ? '50px' : data == 1 ? '50px' : '18px' }}>+</span>
                                 </div>
@@ -118,7 +125,11 @@ export default function TableData() {
                                         variant="outlined"
                                         onClick={() => handlePartnersArray(index)}
                                         label={data == 0 ? 'None' : data == 1 ? 'Basic' : data == 2 ? 'Advanced' : 'Complex'}
-                                        style={{ backgroundColor: data == 0 ? 'rgba(0, 0, 0, 0.2)' : data == 1 ? '#91D4A8' : data == 2 ? '#E9BE74' : '#F57F6C', width: data == 0 ? '60px' : data == 1 ? '88px' : '104px' }}
+                                        style={{
+                                            backgroundColor: data == 0 ? 'rgba(0, 0, 0, 0.2)' : data == 1 ? '#91D4A8' : data == 2 ? '#E9BE74' : '#F57F6C',
+                                            width: data == 0 ? '60px' : data == 1 ? '88px' : '104px',
+                                            margin: '0 auto'
+                                        }}
                                     />
                                     <span style={{ padding: '4px', marginLeft: data == 0 ? '50px' : data == 1 ? '50px' : '18px' }}>+</span>
                                 </div>
@@ -133,10 +144,15 @@ export default function TableData() {
                                 <div className='reactChips' style={{ display: 'flex' }}>
                                     <span style={{ padding: '4px' }}>-</span>
                                     <Chip
+                                        className='muiChip'
                                         variant="outlined"
                                         onClick={() => handleContactUsArray(index)}
                                         label={data == 0 ? 'None' : data == 1 ? 'Basic' : data == 2 ? 'Advanced' : 'Complex'}
-                                        style={{ backgroundColor: data == 0 ? 'rgba(0, 0, 0, 0.2)' : data == 1 ? '#91D4A8' : data == 2 ? '#E9BE74' : '#F57F6C', width: data == 0 ? '60px' : data == 1 ? '88px' : '104px' }}
+                                        style={{
+                                            backgroundColor: data == 0 ? 'rgba(0, 0, 0, 0.2)' : data == 1 ? '#91D4A8' : data == 2 ? '#E9BE74' : '#F57F6C',
+                                            width: data == 0 ? '60px' : data == 1 ? '88px' : '104px',
+                                            margin: '0 auto'
+                                        }}
                                     />
                                     <span style={{ padding: '4px', marginLeft: data == 0 ? '50px' : data == 1 ? '50px' : '18px' }}>+</span>
                                 </div>
